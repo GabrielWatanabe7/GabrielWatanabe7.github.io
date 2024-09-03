@@ -1,0 +1,226 @@
+/* Estilos Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: lightblue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px lightblue;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+color: lightblue;
+}
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px lightblue;
+    transform: scale(1.05);
+}
+/* Estilo do Cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: lightblue;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-do-site h1 span {
+    color: rgb(173, 214, 230);
+}
+.topo-do-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilo do Currículo*/
+section.Currículo{
+padding: 200px 4% ;
+}
+section.Currículo .flex{
+    gap: 60px;
+}
+.Currículo-box  {
+color: #fff;
+padding: 40px;
+border-radius: 20px;
+margin-top: 45px;
+transition: .2s;
+}
+.Currículo-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.418);
+}
+section.Currículo i{
+    font-size: 58px;
+    color: lightblue;
+}
+section.Currículo h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/*Estilo do Sobre*/
+section.Sobre{
+    padding: 80px 4%;
+}
+section.Sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.txt-Sobre{
+    color: #fff;
+}
+.txt-Sobre h2{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.txt-Sobre h2 span{
+color: lightblue;
+display: block;
+}
+.txt-Sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.txt-Sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: lightblue;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+/*Estilo do Portifólio*/
+section.Portfólio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff13;
+}
+section.Portfólio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 860px;
+    height: 560px;
+    background-color: lightblue;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 40px;
+}
+/* Estilo de formulario contato*/
+section.formualrio{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+form textarea{
+    resize: none;
+    max-height: 180px ;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: lightblue;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
